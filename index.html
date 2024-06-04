@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Mini Project - Week 2</title>
+</head>
+<body>
+    <header>
+        <h1>Mini-Project</h1>
+        <h2>Anastasia, Katherine, & Christine</h2>
+    </header>
+<main>
+    <section class="container">
+        <div id="card1" class="card">
+            <h2>Flip an image</h2>
+            <p>If you need to add a caret image to an accordion, you don’t need a separate image for both the up and down carets. Just
+            flip one of the images using CSS like this:</p>
+            <pre>img.flipped { 
+-moz-transform: scaleX(-1); 
+-o-transform: scaleX(-1); 
+-webkit-transform: scaleX(-1); 
+transform: scaleX(-1); 
+filter: FlipH; 
+-ms-filter: "FlipH"; 
+}</pre>        
+        </div>
+    
+        <div id="card2" class="card">
+            <h2>Rotate an image</h2>
+            <p>The CSS code below will rotate an image. Adjust the degrees to fine-tune it to what you need.</p>
+            <pre>/ for Firefox, Safari, and Chrome /
+img { -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg);
+/ for IE /
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+/ for Opera /
+-o-transform: rotate(90deg); } </pre>
+        </div>
+
+        <div id="card3" class="card">
+            <h2>Create a full-screen background</h2>
+            <p>The CSS below will cover your HTML page with the background image.</p>
+            <pre>html { 
+background: url('background-image.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; }</pre>
+        </div>
+
+        <div id="card4" class="card">
+            <h2>Resize a background image</h2>
+            <p>You don’t have to make the background image the same size as an element to fit it. You can adjust the size with CSS.</p>
+            <pre>resize-image { background:url(image_1.png) top left no-repeat; 
+-moz-background-size: 200px 300px; 
+-o-background-size: 200px 300px; 
+-webkit-background-size: 200px 300px; 
+}</pre>
+        </div>
+
+        <div id="card5" class="card">
+            <h2>Replace header text with a logo</h2>
+            <p>UIf you want to show your company’s logo instead of header text but keep the text for SEO purposes, here’s how you would
+            do that.</p>
+            <pre>
+h1 { 
+text-indent:-9999px;
+margin:0 auto;
+width:300px;
+height:200px;
+background:transparent url("logo.jpg") no-repeat scroll; 
+}</pre>
+        </div>
+        
+        <div id="card6" class="card">
+            <h2>Add a custom background color to selected text</h2>
+            <p>Using the CSS below, you can make the background of text selected by a user blue (#0000ff).</p>
+            <pre>p { ::selection { background: #0000ff; } 
+::-moz-selection { background: #0000ff; } 
+::-webkit-selection { background: #0000ff; } 
+}</pre>
+        </div>
+
+    </section>
+</main>
+<footer>
+    <h2>Made with 🤍 and CSS</h2>    
+</footer>  
+</body>
+</html>
